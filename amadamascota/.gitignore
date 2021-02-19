@@ -1,2 +1,6 @@
 *.sqlite3
 __pycache__
+apps/__pycache__
+apps/perdido/__pycache__
+apps/adopcion/__pycache__
+.vscode

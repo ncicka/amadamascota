@@ -1,0 +1,17 @@
+{% block content %}
+    <h1>Lista de Perdidos</h1>
+
+    {% if perdido_list %}
+    <ul>
+
+      {% for p in perdido_list %}
+      <li>
+        <a href="{{ p.get_absolute_url }}">{{ p.fecha_perdido }}</a> ({{p.siencontrado}})
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>No hay registrado animales perdidos.</p>
+    {% endif %} 
+{% endblock %}
